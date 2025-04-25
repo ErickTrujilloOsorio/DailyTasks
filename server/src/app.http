@@ -1,0 +1,90 @@
+### 
+GET http://localhost:3000/users/get
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "first_name": "Erick",
+  "last_name": "Trujillo",
+  "email": "ericktrujillo011@gmail.com",
+  "password": "PepeArjon11",
+  "user_type":  1
+}
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "first_name": "Karla",
+  "last_name": "Osorio",
+  "email": "Karla@gmail.com",
+  "password": "PepeArjon11",
+  "user_type":  2
+}
+
+###
+GET http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "email": "kenneth@gmail.com",
+  "password": "PepeArjon11"
+}
+
+###
+GET http://localhost:3000/users/4/tasks
+
+
+### TASKS
+
+GET http://localhost:3000/tasks/get
+
+###
+
+GET http://localhost:3000/tasks/getByStatus/
+
+
+###
+POST http://localhost:3000/tasks/add
+Content-Type: application/json
+
+{
+  "title": "Lavar ropa",
+  "description": "Lavar trastes",
+  "due_date": "2025-04-17",
+  "due_time": "12:00:00",
+  "photo": "c:/photo.png",
+  "assigned_to": 3,
+  "assigned_by": 1
+}
+
+###
+PUT http://localhost:3000/tasks/updateStatus/6
+Content-Type: application/json
+
+{
+  "status": 3
+}
+
+###
+PUT http://localhost:3000/tasks/updateTask/6
+Content-Type: application/json
+
+{
+  "title": "Lavar la ropa",
+  "description": "Lavar la ropa",
+  "due_date": "2025-04-17",
+  "due_time": "13:00:00",
+  "photo": "c:/photo2.png",
+  "assigned_to": 2,
+  "assigned_by": 1
+}
+
+###
+DELETE http://localhost:3000/tasks/delete/6
+Content-Type: application/json
