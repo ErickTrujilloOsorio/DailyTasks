@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+./dailytask_db.sql
+./server/src/config/db.js
+*.http
+*.env
