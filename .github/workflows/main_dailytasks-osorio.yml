@@ -32,7 +32,7 @@ jobs:
 
       - name: Zip artifact for deployment
         run: |
-          cs server
+          cd server
           zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
