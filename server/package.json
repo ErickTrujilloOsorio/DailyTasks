@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Small project to manage daily tasks in my home to assingments to my family members",
+  "main": "./src/app.js",
+  "scripts": {
+    "sync": "node ./src/models/sync.js",
+    "start": "node --watch ./src/app.js"
+  },
+  "keywords": [
+    "daily",
+    "tasks",
+    "home",
+    "assignments",
+    "family",
+    "members"
+  ],
+  "author": "Erick Trujillo",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "5.1.1",
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "5.1.0",
+    "multer": "1.4.5-lts.2",
+    "mysql2": "3.14.0",
+    "sequelize": "6.37.7",
+    "zod": "3.24.2"
+  }
+}
