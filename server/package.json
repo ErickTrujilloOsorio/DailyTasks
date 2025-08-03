@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Small project to manage daily tasks in my home to assingments to my family members",
   "main": "./src/app.js",
+  "build": "echo 'No build step needed'",
   "scripts": {
     "sync": "node ./src/models/sync.js",
-    "start": "node --watch ./src/app.js"
+    "dev": "node --watch ./src/app.js",
+    "start": "node ./src/app.js"
+
   },
   "keywords": [
     "daily",
