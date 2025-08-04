@@ -15,8 +15,8 @@ app.disable('x-powered-by'); // Disable the 'X-Powered-By' header
 import users from './routes/user.js';
 import tasks from './routes/task.js';
 
-app.use('/', response => {
-  response.status(200).json({ message: 'Welcome to the Daily Tasks API' });
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Welcome to the Daily Tasks API' });
 });
 app.use('/users', users);
 app.use('/tasks', tasks);
